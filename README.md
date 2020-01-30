@@ -1,8 +1,8 @@
-# {Application Name}
-#### {Brief description of application}, {Date of current version}
-#### By **{List of contributors}**
+# Gallery App
+#### A Galley App , 30/01/2020
+#### By **Greg Katono**
 ## Description
-{This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }
+{}
 ## Setup/Installation Requirements
 * This is a great place
 * to list setup instructions
