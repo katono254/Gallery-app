@@ -2,7 +2,7 @@
 #### A Galley App , 30/01/2020
 #### By **Greg Katono**
 ## Description
-{}
+This is an app where users can view different photos and they are able to click on a single photo to expand it.They can also do a bunch of other things like search for different categories of photos,copy links to share to friends and family and finally view photos based on location they were taken.
 ## Setup/Installation Requirements
 * This is a great place
 * to list setup instructions
