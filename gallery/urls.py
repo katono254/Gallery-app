@@ -18,4 +18,5 @@ from django.conf.urls import url,include
 
 urlpatterns = [
     url('^$',views.welcome,name = 'welcome'),
+    url(r'^photos/',include('photos.urls'))
 ]
