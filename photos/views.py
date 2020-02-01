@@ -13,4 +13,15 @@ def welcome(request):
 def image_location(request, location):
     images = Image.filter_by_location(location)
     print(images)
-    return render(request, 'Render/location.html', {'location_images': images})
+    return render(request, 'Render/welcome.html', {'location_images': images})
+
+def search_results(request):
+    if 'imagesearch' in request.GET and request.GET["imagesearch"]:
+        category = request.GET.get("imagesearch")
+        searched_images = Image.search_by_category(category)
+        message = f"{category}"
+        print(searched_images)
+        return render(request, 'pictures/show_tell.html', {"message": message, "images": searched_images})
+    else:
+        message = "PLease check spelling of your search results"
+        return render(request, 'pictures/show_tell.html', {"message": message})
