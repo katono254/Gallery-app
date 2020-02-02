@@ -8,7 +8,7 @@ app_name ='photos'
 
 
 urlpatterns=[
-    url('^$',views.welcome,name = 'welcome'),
+    url('^$', views.welcome, name = 'welcome'),
     url(r'^search/', views.search_results, name='search'),
     url(r'^location/(?P<location>\w+)/', views.image_location, name='location'),
 
