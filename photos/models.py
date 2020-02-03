@@ -43,6 +43,9 @@ class Image(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     category = models.ForeignKey(Category)
     location = models.ForeignKey(Location)
+    
+
+     
 
     @classmethod
     def filter_by_location(cls, location):

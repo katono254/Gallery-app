@@ -12,7 +12,6 @@ def welcome(request):
 
 def image_location(request, location):
     images = Image.filter_by_location(location)
-    print(images)
     return render(request, 'Render/welcome.html', {'location_images': images})
 
 def search_results(request):
@@ -24,4 +23,8 @@ def search_results(request):
         return render(request, 'Render/show_tell.html', {"message": message, "images": searched_images})
     else:
         message = "PLease check spelling of your search results"
-        return render(request, 'render/show_tell.html', {"message": message})
+        return render(request, 'Render/show_tell.html', {"message": message})
+
+
+
+        
