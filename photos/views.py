@@ -21,7 +21,7 @@ def search_results(request):
         searched_images = Image.search_by_category(category)
         message = f"{category}"
         print(searched_images)
-        return render(request, 'render/show_tell.html', {"message": message, "images": searched_images})
+        return render(request, 'Render/show_tell.html', {"message": message, "images": searched_images})
     else:
         message = "PLease check spelling of your search results"
         return render(request, 'render/show_tell.html', {"message": message})
