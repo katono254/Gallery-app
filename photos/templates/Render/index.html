@@ -4,8 +4,8 @@
 
 {% block content %}
 <div class="container-fluid landing">
-    <h2 class="text-center imagea">The Gallery App
-        Feel free to browse for photos that you may like!!
+    <h2 class="text-center imagea">The Gallery App.
+        Feel free to click on the images and check their locations!!
     </h2>
   
 </div>
@@ -17,12 +17,7 @@
                 <h3>Gallery</h3>
             </div>
             <div class="col-md-5">
-            <span id="locations">
-                {% for location in locations %}
-                    <a class="btn btn-outline-info btn-sm" id="btn"
-                       href="/location/{{location.name}}">{{location.name}}</a>
-                {%endfor%}
-             </span>
+            
             </div>
         </div>
         <hr>
