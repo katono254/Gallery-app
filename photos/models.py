@@ -36,7 +36,7 @@ class Location(models.Model):
 
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='images/',default='greg')
     name = models.CharField(max_length=60)
     description = models.TextField()
     author = models.CharField(max_length=40, default='admin')
